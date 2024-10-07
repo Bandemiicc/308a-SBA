@@ -5,9 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.mjs"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" defer src="./script.mjs"></script>
+    <script type="module" defer src="./weatherAPI.mjs"></script>
+    <script type="module" defer src="./timezoneAPI.mjs"></script>
+    
 </head>
 <body>
-    
+
+    <div class="card">
+        <div class="search">
+            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <button> Get Weather </button>
+        </div>
+
+        <div class="weather">
+            <h1 class="temp">--°C</h1>
+            <h2 class="city">City</h2>
+            <div class="details">
+                <div class="col">
+                    <div>
+                        <p class="humidity">--%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <p class="wind">-- km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 </html>
